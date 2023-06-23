@@ -103,6 +103,8 @@ def user_input_features():
                     'geography':geography,
                     'card_type':card_type}
     
+    data_display.columns = data_display.columns.astype(str)
+    
     features=pd.DataFrame(data_display,index=[0])
     st.subheader('Input Parameter')
     st.write(features)
