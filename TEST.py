@@ -105,9 +105,10 @@ def user_input_features():
     
     
     
-    features=pd.DataFrame(data_display,index=[0])
+    features=pd.DataFrame(data,index=[0])
+    features_display=pd.DataFrame(data_display,index=[0])
     st.subheader('Input Parameter')
-    st.write(features)
+    st.write(features_display)
     return features
 
  
