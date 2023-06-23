@@ -92,10 +92,10 @@ def user_input_features():
                            'spain':spain,'diamond':diamond,'gold':gold,
                            'platinum':platinum,'silver':silver}
 
-    data_display={  'age':age,balance:balance,
+    data_display={  'age':age,'balance':balance,
                     'num_product':num_product,
                     'has_card':has_card,'is_active':is_active,
-                    'salary':salary,complain:complain,
+                    'salary':salary,'complain':complain,
                     'tenure':tenure,
                     'satisfaction':satisfaction,
                     'gender':gender,
@@ -103,7 +103,7 @@ def user_input_features():
                     'geography':geography,
                     'card_type':card_type}
     
-    data_display.columns = data_display.columns.astype(str)
+    
     
     features=pd.DataFrame(data_display,index=[0])
     st.subheader('Input Parameter')
